@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h1 style="text-align: center;color: white;">Calculator</h1>
+    <h1 class="mt-5" style="text-align: center;color: white;">Calculator</h1>
      <div class=" calc-body">
 
                 <!-- Calculator Display Screen -->
@@ -26,24 +26,24 @@
                 <!-- Calculator Buttons -->
                 <div class="calc-button-row">
                     
-                    <button id="seven" onclick="display('7')" >7</button>
-                    <button id="eight" onclick="display('8')" >8</button>
-                    <button id="nine" onclick="display('9')">9</button>
-                    <button id="mul" onclick="display('*')" class="opt">&#215;</button>
-                    <button id="four" onclick="display('4')" >4</button>
-                    <button id="five" onclick="display('5')" >5</button>
-                    <button id="six" onclick="display('6')">6</button>
-                    <button id="sub" onclick="display('-')" class="opt">&#8722;</button>
-                    <button id="one" onclick="display('1')" >1</button>
-                    <button id="two" onclick="display('2')">2</button>
-                    <button id="three" onclick="display('3')">3</button>
-                    <button id="add" onclick="display('+')" class="opt">&#43;</button>
-                    <button id="ac" class="ac" onclick="clearAll()" >AC</button>
-                    <button id="zero" onclick="display('0')" class="opt">0</button>
-                    <button id="div" onclick="display('/')" class="opt">&#247;</button>
-                    <button id="equal" onclick="output()"  class="opt">&#61;</button>
-                    <button id="del" onclick="removeItem()">&#9003;</button>
-
+                    <button id="seven" onclick="displayNum('7')"  >7</button>
+                    <button id="eight" onclick="displayNum('8')" >8</button>
+                    <button id="nine" onclick="displayNum('9')">9</button>
+                    <button id="mul" onclick="displayNum('*')" class="opt">&#215;</button>
+                    <button id="four"onclick="displayNum('4')" >4</button>
+                    <button id="five" onclick="displayNum('5')" >5</button>
+                    <button id="six" onclick="displayNum('6')">6</button>
+                    <button id="sub" onclick="displayNum('-')" class="opt">&#8722;</button>
+                    <button id="one" onclick="displayNum('1')" >1</button>
+                    <button id="two" onclick="displayNum('2')">2</button>
+                    <button id="three" onclick="displayNum('3')">3</button>
+                    <button id="add" onclick="displayNum('+')" class="opt">&#43;</button>
+                    <button id="ac" onclick="allClear()" class="ac"  >AC</button>
+                    <button id="zero" onclick="displayNum('0')"  class="opt">0</button>
+                    <button id="div" onclick="displayNum('/')"  class="opt">&#247;</button>
+                    <button id="equal" onclick="evalExp()"  class="opt">&#61;</button>
+                    <button id="del" onclick="lastDigit()" >&#9003;</button>
+ 
                 </div>
             </div>
 </body>

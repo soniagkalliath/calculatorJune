@@ -1,24 +1,17 @@
-
-
-//1. display all numbers and operators other than ac & = inside input with id = result
-//when we click on it
-
-function display(num){
-    result.value+=num
+// to view content inside result whenever we click on the button
+function displayNum(num){
+    console.log(result);
+    result.value += num
 }
 
-//1. clear all contents from input when we click on ac button
-
-function clearAll(){
+function allClear(){
     result.value = ""
 }
 
-//3. Evaluate expression using eval
-function output(){
+function evalExp(){
     result.value = eval(result.value)
 }
 
-//4. Remove last item
-function removeItem(){
-    result.value = (result.value).slice(0,-1)
+function lastDigit(){
+   result.value = result.value.slice(0,-1)
 }
